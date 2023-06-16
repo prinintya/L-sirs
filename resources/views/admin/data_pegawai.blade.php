@@ -16,9 +16,9 @@
 		</div>
 	</div>
 	<div class="container-fluid" style="margin-left:0.5cm; margin-top:3cm">
-			<a href="/data_pasien" class="btn btn-success btn-lg" >Data Pasien</a>	
-			<a href="/riwayat_pasien" class="btn btn-success btn-lg">Laporan Rekam Medik</a>		
-			<a href="/keuangan" class="btn btn-success btn-lg">Laporan Keuangan</a>
+			<a href="/data_pasien" class="btn btn-primary btn-lg" >Data Pasien</a>	
+			<a href="/riwayat_pasien" class="btn btn-primary btn-lg">Laporan Rekam Medik</a>		
+			<a href="/keuangan" class="btn btn-primary btn-lg">Laporan Keuangan</a>
 		</div>
 	
 </div>
