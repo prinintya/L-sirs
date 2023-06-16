@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Data Pasien')
+@section('title', 'Riwayat Pasien')
 
 @section('content')
 <!-- breadcrumb -->
@@ -8,17 +8,8 @@
 
             <div class="container mg-t-20">
 
-				<div class="breadcrumb-header justify-content-between">
-		
-					
-					<div class="left-content">
-						<h4 class="content-title mb-1" style="margin-left: 0.5cm">Data Pasien</h4>
-						<nav aria-label="breadcrumb">
-						</nav>
-					</div>
+				
 
-
-				</div>
 				<!-- breadcrumb -->
 
 				
@@ -29,7 +20,11 @@
 					<div class="col-md-12">
 						<div class="card">
 							<div class="card-body">
-								
+								<div class="left-content">
+									<h4 class="content-title mb-1">Laporan Rekam Medik Pasien</h4>
+									<nav aria-label="breadcrumb">
+									</nav>
+								</div>
 							     <form method="post" action="/cari_pasien">
 							         @csrf
 							        <div class="input-group mb-4">

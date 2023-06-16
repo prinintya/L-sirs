@@ -47,6 +47,22 @@ class AdminController extends Controller
         $tindakan = DB::table('tindakan')->join('pasien', 'tindakan.id_pasien', '=', 'pasien.id')->select('tindakan.*', 'pasien.nama')->paginate(10);
         return view('admin.data_tindakan', ['tindakan' => $tindakan]);
     }
+    public function data_kehamilan(){
+        $kehamilan = DB::table('kehamilans')->paginate(10);
+        return view('admin.data_kehamilan', ['kehamilan' => $kehamilan]);
+    }
+    public function data_persalinan(){
+        $persalinan = DB::table('persalinans')->paginate(10);
+        return view('admin.data_persalinan', ['persalinan' => $persalinan]);
+    }
+    public function data_nifas(){
+        $nifas = DB::table('nifas')->paginate(10);
+        return view('admin.data_nifas', ['nifas' => $nifas]);
+    }
+    public function data_kb(){
+        $kb = DB::table('kbs')->paginate(10);
+        return view('admin.data_kb', ['kb' => $kb]);
+    }
     
     
 }

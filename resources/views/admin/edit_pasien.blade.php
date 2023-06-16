@@ -47,8 +47,8 @@
                             <input type="date" name="tanggal_lahir" required class="form-control" id="tanggal_lahir" value="{{ $data->tanggal_lahir }}">
                         </div>
                         <div class="mb-3">
-                            <label for="tanggal_masuk">Tanggal Masuk</label>
-                            <input type="date" name="tanggal_masuk" class="form-control" id="tanggal_masuk" value="{{ $data->tanggal_masuk }}">
+                            <label for="tanggal_pemeriksaan">Tanggal Masuk</label>
+                            <input type="date" name="tanggal_pemeriksaan" class="form-control" id="tanggal_pemeriksaan" value="{{ $data->tanggal_pemeriksaan }}">
                         </div>
                         <div class="mb-3">
                             <label for="telepon">Telepon</label>

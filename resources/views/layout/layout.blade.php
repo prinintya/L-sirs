@@ -7,7 +7,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="Description" content="Dashfox - Laravel Admin & Dashboard Template">
-		<meta name="Author" content="Spruko Technologies Private Limited">
+		<meta name="Author" content="">
 		<meta name="Keywords" content="admin template, admin dashboard, bootstrap dashboard template, bootstrap 4 admin template, laravel, php framework, php laravel, laravel framework, php mvc, laravel admin panel, laravel admin panel, laravel template, laravel bootstrap, blade laravel, best php framework"/>
 
         <!-- Title -->
@@ -61,68 +61,65 @@
 
         <!-- main-sidebar -->
 		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-		<aside class="app-sidebar">
-			<div class="main-sidebar-header active">
-				<a class="desktop-logo logo-light active" href="#">
-                    <i class="fas fa-bars"></i>
-				</a>
-				</div>
+		<aside class="app-sidebar bg-light" >
+			<div class="">
+				<img class="" src="/gambar/logoBidan.png" width="245px" height="130px" style="padding-left: 0.5cm; padding-top:0.2cm" >
 			</div>
-			<div class="main-sidemenu sidebar-scroll">
-				<ul class="side-menu">
-					<li class="slide">
+			<!--<div class="main-sidemenu sidebar-scroll">
+				<ul class="side-menu">-->
+					<!-- <li class="slide">
 						<a class="side-menu__item" href="/"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
                      <i class="fas fa-users" style="font-size:20px; margin-right:5px"></i>
 						<span class="side-menu__label">Data Pegawai</span></a>
-					</li>
-					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="/data_dokter"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-user-md" style="font-size:22px; margin-right:10px"></i>
-						<span class="side-menu__label">Data Dokter</span></a>
-					</li>
-					<li class="slide">
-						<a class="side-menu__item" href="/jadwal_praktek"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="far fa-calendar-alt" style="font-size:20px; margin-right:12px"></i>
-						<span class="side-menu__label">Jadwal Praktek Dokter</span></a>
-					</li>
-					<li class="slide">
+					</li> -->
+					<!--<li class="slide">
 						<a class="side-menu__item" href="/data_pasien"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="far fa-calendar-alt" style="font-size:20px; margin-right:12px"></i>
+                    <i class="fas fa-male" style="font-size:20px; margin-right:12px"></i>
 						<span class="side-menu__label">Data Pasien</span></a>
 					</li>
-					<li class="slide">
+					 <li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="/tempat_tidur"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-bed" style="font-size:17px; margin-right:9px"></i>
-						<span class="side-menu__label">Data Tempat Tidur</span></a>
-					</li>
+                    <i class="fas fa-book" style="font-size:17px; margin-right:9px"></i>
+						<span class="side-menu__label">Laporan Rekam Medik</span></a>
+					</li> 
 					<li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="/data_rawat"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
-                    <i class="fas fa-procedures" style="font-size:17px; margin-right:9px"></i>
-						<span class="side-menu__label">Data Rawat</span></i></a>
-							</li>
-					<li class="slide">
+                    <i class="fas fa-database" style="font-size:17px; margin-right:9px"></i>
+						<span class="side-menu__label">Laporan Keuangan</span></i></a>
+					</li> -->
+					<!-- <li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="/obat_perlengkapan"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
 						<i class="fas fa-tablets" style="font-size:17px; margin-right:9px"></i>
 						<span class="side-menu__label">Data Obat & Perlengkapan</span></a>
-					</li>
-					<li class="slide">
+					</li> -->
+					<!-- <li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="/data_tindakan"><div class="side-angle1"></div><div class="side-angle2"></div><div class="side-arrow"></div>
 						<i class="fas fa-file-medical-alt" style="font-size:22px; margin-right:10px"></i>
 						<span class="side-menu__label">Data Tindakan</span></a>
-				</ul>
-				<div class="app-sidefooter">
-					<a class="side-menu__item" href="/logout"><svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M11,7L9.6,8.4l2.6,2.6H2v2h10.2l-2.6,2.6L11,17l5-5L11,7z M20,19h-8v2h8c1.1,0,2-0.9,2-2V5c0-1.1-0.9-2-2-2h-8v2h8V19z"/></g></svg> <span class="side-menu__label">Logout</span></a>
-				</div>
-			</div>
+					</li> -->
+					
+					<!--<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Pelayanan
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
+							<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
+							<a class="dropdown-item" href="/data_nifas">Nifas</a>
+							<a class="dropdown-item" href="/data_kb">KB</a>
+						</div>
+					</div>-->
+				
 		</aside>
 		<!-- main-sidebar -->
 		<!-- main-content -->
 		<div class="main-content app-content">
-
+			
         <!-- main-header -->
-			<div class="main-header sticky side-header nav nav-item">
+		
+			<div class="main-header sticky side-header nav nav-item">				
 				<div class="container-fluid">
-					<div class="main-header-left">
+					<div class="main-header-left">			 
 						<div class="app-sidebar__toggle d-md-none" data-toggle="sidebar">
 							<a class="open-toggle" href="#"><i class="fas fa-bars" style="font-size:25px"></i></a>
 							<a class="close-toggle" href="#"><i class="fas fa-times"></i></a>
@@ -145,11 +142,11 @@
 									<a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a>
 								</div>
 							</div>
-							<div class="dropdown main-header-message right-toggle">
+							<!--<div class="dropdown main-header-message right-toggle">
 								<a class="nav-link pr-0" data-toggle="sidebar-right" data-target=".sidebar-right">
 									<i class="fas fa-caret-down" style="font-size:20px"></i>
 								</a>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -202,7 +199,7 @@
         <!-- Footer opened -->
 		<div class="main-footer ht-40">
 			<div class="container-fluid pd-t-0-f ht-100p">
-				<span>Copyright © 2021 <a href="#">RS Suka-Suka</a></span>
+				<span>Copyright © 2023 <a href="#">INFORMATICS PROGRAMMING TEAM TEL-U </a></span>
 			</div>
 		</div>
 		<!-- Footer closed -->

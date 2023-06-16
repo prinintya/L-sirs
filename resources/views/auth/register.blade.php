@@ -10,7 +10,7 @@
     
     <style>
         body{
-            background: #efefef;
+            background: #ffffff;
         }
         .row{
             display: flex;
@@ -22,20 +22,15 @@
   </head>
   <body>
     
-    <!-- navbar -->
-    <nav class="navbar navbar-dark bg-primary mb-4">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">RS Suka-Suka</span>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
+   
     
     
     <!-- content -->
     <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="wrapper bg-white text-center p-3">
+                    <div class="wrapper bg-info text-center p-3" style="margin-top: 2.5cm">
+                        <img class="" src="/gambar/logoBidan.png" width="250px" height="150px">
                     <form method="post" action="/store_register">
                         @csrf
                         <h2 class="mb-4">Register</h2>

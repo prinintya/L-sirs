@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PasienMigrate extends Migration
+class CreateNifasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class PasienMigrate extends Migration
      */
     public function up()
     {
-    Schema::create('pasien', function (Blueprint $table) {
+        Schema::create('nifas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('penyakit');
-            $table->string('telepon');
-            $table->text('alamat');
-            $table->date('tanggal_lahir');
-            $table->date('tanggal_masuk');
+            $table->date('tglPemeriksaan');
+            $table->string('keluhan');
+            $table->string('riwayatPasien');
+            $table->string('hasilPemeriksaan');
+            $table->string('analisaPasien');
+            $table->string('penatalaksanaanAsuhan');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class PasienMigrate extends Migration
      */
     public function down()
     {
-        Schema::drop('pasien');
+        Schema::dropIfExists('nifas');
     }
 }

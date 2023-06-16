@@ -18,21 +18,29 @@ class PasienController extends Controller
     public function store_pasien(Request $request){
         
         $request->validate([
+            'nik' => 'required',
+            'status' => 'nullable|string',
             'nama' => 'required|string',
+            'tempat_lahir' => 'nullable|string',
             'tanggal_lahir' => 'required',
-            'tanggal_masuk' => 'required',
+            'tanggal_pemeriksaan' => 'required',
             'penyakit' => 'nullable|string',
             'telepon' => 'required|max:15',
             'alamat' => 'required',
+            'layanan' => 'required',
             ]);
             
         $save = DB::table('pasien')->insert([
+            'nik' => $request ->nik,
+            'status' => $request ->status,
             'nama' => $request->nama,
+            'tempat_lahir' => $request ->tempat_lahir,
             'tanggal_lahir' => $request->tanggal_lahir,
-            'tanggal_masuk' => $request->tanggal_masuk,
+            'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'telepon' => $request->telepon,
             'alamat' => $request->alamat,
             'penyakit' => $request->penyakit,
+            'layanan' => $request->layanan,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
             ]);
@@ -59,7 +67,7 @@ class PasienController extends Controller
             'nama' => 'required|string',
             'penyakit' => 'nullable|string',
             'telepon' => 'required',
-            'tanggal_masuk' => 'required',
+            'tanggal_pemeriksaan' => 'required',
             'tanggal_lahir' => 'required',
             'alamat' => 'required'
             ]);
@@ -69,7 +77,7 @@ class PasienController extends Controller
         DB::table('pasien')->where('id', $request->id)->update([
             'nama' => $request->nama,
             'penyakit' => $request->penyakit,
-            'tanggal_masuk' => $request->tanggal_masuk,
+            'tanggal_pemeriksaan' => $request->tanggal_pemeriksaan,
             'tanggal_lahir' => $request->tanggal_lahir,
             'telepon' => $request->telepon,
             'alamat' => $request->alamat,

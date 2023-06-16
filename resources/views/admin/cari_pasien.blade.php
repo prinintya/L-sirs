@@ -11,7 +11,7 @@
 
 					
 					<div class="left-content">
-						<h4 class="content-title mb-1">Cari Pasien</h4>
+						<h4 class="content-title mb-1" style="margin-left: 0.5cm">Cari Pasien</h4>
 						<nav aria-label="breadcrumb">
 						</nav>
 					</div>
@@ -37,15 +37,15 @@
 										<thead>
 								
 					<tr>
-												<th>No</th>
+												<th>No Rekam Medik</th>
 
 		                  <th>Nama</th>
 												<th>Tanggal Lahir</th>
-												<th>Penyakit</th>
+												<!--<th>Penyakit</th>-->
 												<th>Tanggal Masuk</th>
 												<th>Alamat</th>
 												<th>Telepon</th>
-												<th>Aksi</th>
+												<!--<th>Pelayanan</th>-->
 											</tr>
 										</thead>
 										<tbody>
@@ -54,7 +54,7 @@
 												<th scope="row">{{$i++}}</th>
 												<td>{{$p->nama}}</td>
 												<td>{{$p->tanggal_lahir}}</td>
-												<td>
+												<!--<td>
                             
                             <?php 
                             if($p->penyakit){ 
@@ -63,8 +63,8 @@
                             else{
                                 echo 'none';
                             }
-                            ?>				</td>
-												<td>{{$p->tanggal_masuk}}</td>
+                            ?>			</td>-->
+												<td>{{$p->tanggal_pemeriksaan}}</td>
 												<td>{{$p->alamat}}</td>
 												<td>{{$p->telepon}}</td>
 												<td>
@@ -74,6 +74,18 @@
                                 @csrf
                                 <input type="hidden" name="id" value="{{$p->id}}">
                             <button class="btn" onclick="return confirm('Yakin mau menghapus?')"><i class="far fa-trash-alt"></i></button>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Pelayanan
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="/data_kehamilan">Kehamilan</a>
+									<a class="dropdown-item" href="/data_persalinan">Persalinan</a>
+									<a class="dropdown-item" href="/data_nifas">Nifas</a>
+									<a class="dropdown-item" href="/data_kb">KB</a>		
+								</div>
+							</div>
+							<button type="button" class="btn btn-warning" style="margin-top:2px" href="/riwayat_pasien" >Riwayat</button>
                             </form>
 									    		</td>
 											</tr>
